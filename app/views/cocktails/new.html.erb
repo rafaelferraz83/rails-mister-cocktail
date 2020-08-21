@@ -1,8 +1,10 @@
-<h1>Create New Cocktail</h1>
+<div class='container'>
+  <h1>Create New Cocktail</h1>
 
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
-<% end %>
-
-<%= link_to 'Back', cocktails_path %>
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.button :submit, class: "btn btn-gradient" %>
+    <%= link_to 'Go Back', cocktails_path, class: "btn btn-gradient" %>
+  <% end %>
+  
+</div>

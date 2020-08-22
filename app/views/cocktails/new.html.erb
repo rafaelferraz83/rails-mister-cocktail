@@ -1,10 +1,10 @@
-<div class='container'>
+<div class='container mt-4'>
   <h1>Create New Cocktail</h1>
 
   <%= simple_form_for @cocktail do |f| %>
     <%= f.input :name %>
-    <%= f.button :submit, class: "btn btn-gradient" %>
-    <%= link_to 'Go Back', cocktails_path, class: "btn btn-gradient" %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+    <%= link_to 'Go Back', cocktails_path, class: "btn btn-primary" %>
   <% end %>
   
 </div>

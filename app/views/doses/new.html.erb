@@ -1,11 +1,11 @@
-<div class='container'>
+<div class='container mt-4'>
   <h1>Create New Dose</h1>
 
   <%= simple_form_for [@cocktail, @dose]  do |f| %>
     <%= f.input :description %>
     <%= f.association :ingredient %>
-    <%= f.button :submit, class: "btn btn-gradient" %>
-    <%= link_to 'Go Back', cocktail_path(@cocktail), class: "btn btn-gradient" %>
+    <%= f.button :submit, class: class: "btn btn-primary" %>
+    <%= link_to 'Go Back', cocktail_path(@cocktail), class: "btn btn-primary" %>
   <% end %>
  
 </div>
